@@ -1,0 +1,369 @@
+/* Estilos Generales */
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-info: #17a2b8;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Nube de palabras clave */
+.keyword-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.keyword-tag {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 8px 16px;
+    margin: 8px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 500;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.keyword-tag:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.size-sm {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.size-md {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.size-lg {
+    font-size: 1.2rem;
+}
+
+.size-xl {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Tablero de Lluvia de Ideas */
+.brainstorming-section {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+
+.brainstorming-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    min-height: 300px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-note {
+    width: 200px;
+    min-height: 180px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transform: rotate(-1deg);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.sticky-note:hover {
+    transform: rotate(0) scale(1.02);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sticky-note h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sticky-note p {
+    font-size: 0.9rem;
+}
+
+.yellow {
+    background-color: #fff9c4;
+}
+
+.blue {
+    background-color: #bbdefb;
+}
+
+.green {
+    background-color: #c8e6c9;
+}
+
+.pink {
+    background-color: #f8bbd0;
+}
+
+.purple {
+    background-color: #e1bee7;
+}
+
+.orange {
+    background-color: #ffe0b2;
+}
+
+/* Tarjetas de Valores */
+.value-card {
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Tarjetas de Conceptos */
+.concept-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.concept-card .card-title {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+/* Inspiración Visual */
+.inspiration-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    text-align: center;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.typography-sample {
+    margin-bottom: 15px;
+}
+
+.icon-samples {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.icon-samples i {
+    color: var(--color-primary);
+    margin: 0 5px;
+}
+
+/* Tarjetas de Experiencia de Usuario */
+.user-experience-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.user-experience-card .card-header {
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.user-experience-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.interface-mockup {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mockup-header {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.mockup-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mockup-element {
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+/* Variantes de interfaces según nivel */
+.bachelor-interface .mockup-header {
+    background-color: rgba(108, 117, 125, 0.3);
+}
+
+.graduate-interface .mockup-header {
+    background-color: rgba(0, 123, 255, 0.3);
+}
+
+.professional-interface .mockup-header {
+    background-color: rgba(40, 167, 69, 0.3);
+}
+
+.specialist-interface .mockup-header {
+    background-color: rgba(23, 162, 184, 0.3);
+}
+
+/* Tarjetas de Funcionalidades */
+.feature-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Navegación Mockup */
+.navigation-mockup {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.nav-element {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.nav-element:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.nav-home {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .navigation-mockup {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-element {
+        flex: 1 0 40%;
+        text-align: center;
+    }
+    
+    .user-experience-card .row {
+        flex-direction: column;
+    }
+    
+    .interface-mockup {
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    .sticky-note {
+        width: 160px;
+        min-height: 160px;
+    }
+    
+    .keyword-tag {
+        padding: 6px 12px;
+        margin: 6px;
+    }
+} 
